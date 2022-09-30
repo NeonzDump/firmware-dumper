@@ -49,6 +49,7 @@ jobs:
              cd dumper
              chmod a+x dumprx.sh
              export PUSH_TO_GITLAB=true
+             echo "gitlab.webnerserver.com" > .gitlab_instance
              echo "Neil-Firmware-Dumps" > .gitlab_group
              echo "${{ secrets.GITLABTOKEN }}" > .gitlab_token
              echo "${{ secrets.TGTOKEN }}" > .tg_token
